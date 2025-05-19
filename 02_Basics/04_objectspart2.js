@@ -59,3 +59,19 @@ console.log(Object.entries(tinderUser));
 console.log(tinderUser.hasOwnProperty('isLoggedIn')); // check the key is present or not
 
 
+//***********************Object Destructuring***************************************************** */
+
+const course = {
+    coursename: "Js in hindi",
+    price: "999",
+    courseInstructor: "prateek",
+}
+
+const { courseInstructor: instructor } = course // destructuring give small name to the key
+console.log(instructor); 
+
+
+// ******** API JSON FORMAT ***************
+{
+
+}
