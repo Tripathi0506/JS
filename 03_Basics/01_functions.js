@@ -46,3 +46,36 @@ function loginUserMessage(username) {
 // console.log(loginUserMessage("Prateek")) 
 console.log(loginUserMessage()) // if value is not passed then it will print undefined not null
 
+function calculateCartPrice(...num1) { // ... is called rest operator
+    return num1
+}
+
+console.log(calculateCartPrice(100, 200, 300, 400, 500)) // it will return an array
+
+// function when object is passed
+
+const user = {
+    username: "prateek",
+    price: 199
+}
+
+function handleObject(anyObject) {
+    console.log(`username is ${anyObject.username} and price is ${anyObject.price}`)
+}
+
+// handleObject(user)
+// we can also pass the object directly like as
+handleObject({
+    username: "sam",
+    price: 199
+})
+
+// function with array
+
+const myNewArray = [200, 300, 400, 500]
+
+function returnSecondValue(getArray) {
+    return getArray[1]
+}
+
+console.log(returnSecondValue(myNewArray)) // it will return 300
