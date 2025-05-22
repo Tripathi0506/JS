@@ -40,6 +40,14 @@ const chai = () => {
 
 // Arrow function
 
-const addTwo = (num1, num2) => {
-    return num1 + num2
-}
+// const addTwo = (num1, num2) => {  // this is simple arrow function
+//     return num1 + num2
+// }
+
+// const addTwo = (num1, num2) => num1 + num2 // this is implicit return function 
+
+const addTwo = (num1, num2) => ({ username: "prateek" })  // object use paranthesis 
+
+
+console.log(addTwo(3, 4));
+
